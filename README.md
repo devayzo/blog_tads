@@ -16,7 +16,7 @@ O projeto foi desenvolvido com foco na prática dos conceitos de desenvolvimento
 
 Principais dependências:
 
-{  
+`{  
    ㅤ "react": "^19.2.8",  
    ㅤ "react-dom": "^19.2.8",  
   ㅤ  "react-router-dom": "^7.18.4",  
@@ -24,13 +24,12 @@ Principais dependências:
   ㅤ  "@mui/icons-material": "^9.4.0",  
   ㅤ  "@emotion/react": "^11.14.0",  
   ㅤ  "@emotion/styled": "^11.14.1"  
-}
+}`
 
 📚 Objetivo
 O objetivo deste projeto é aplicar, de maneira prática, conceitos apresentados durante as aulas de desenvolvimento de aplicações web, utilizando uma estrutura moderna baseada em React.
 
 Entre os conceitos trabalhados estão:
-
 * Componentização;
 * Criação de interfaces com React;
 * Navegação entre páginas;
@@ -63,5 +62,4 @@ Orientação
 * Professor: Geovani Succi [(@geovani-succi)](https://www.github.com/geovani-succi)
 * Curso: Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)
 ⸻
-
 📌 Projeto acadêmico — TADS
