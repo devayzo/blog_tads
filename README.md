@@ -4,7 +4,7 @@ Projeto de desenvolvimento de uma aplicação web de blog, desenvolvido durante 
 
 O projeto foi desenvolvido com foco na prática dos conceitos de desenvolvimento Front-End, componentização, gerenciamento de rotas e construção de interfaces utilizando React.
 
-🎓 Projeto acadêmico desenvolvido em sala de aula com assistência do professor Geovani Succi @geovani-succi
+🎓 Projeto acadêmico desenvolvido em sala de aula com assistência do professor Geovani Succi [(@geovani-succi)](https://www.github.com/geovani-succi)
 
 🚀 Tecnologias utilizadas
 
@@ -113,7 +113,7 @@ O desenvolvimento teve como objetivo transformar os conceitos apresentados em sa
 
 Orientação
 
-Professor: Geovani Succi (@geovani-succi)
+Professor: Geovani Succi [(@geovani-succi)](https://www.github.com/geovani-succi)
 
 Curso: Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)
 
