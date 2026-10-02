@@ -14,7 +14,7 @@ O projeto foi desenvolvido com foco na prática dos conceitos de desenvolvimento
 * JavaScript / JSX — Linguagens utilizadas no desenvolvimento.
 * Oxlint — Ferramenta utilizada para análise e padronização do código.
 
-📚 Objetivo
+📚 Objetivo  
 O objetivo deste projeto é aplicar, de maneira prática, conceitos apresentados durante as aulas de desenvolvimento de aplicações web, utilizando uma estrutura moderna baseada em React.
 
 Entre os conceitos trabalhados estão:
@@ -28,7 +28,7 @@ Entre os conceitos trabalhados estão:
 * Execução de projetos utilizando Vite;
 * Boas práticas de desenvolvimento Front-End.
 
-📂 Estrutura do projeto
+📂 Estrutura do projeto  
 A aplicação possui uma estrutura organizada para separar os principais elementos do projeto.
 
 ⚙️ Como executar o projeto  
@@ -43,10 +43,10 @@ Pré-requisitos
 
 Após iniciar o servidor, o Vite disponibilizará o endereço local da aplicação no terminal.
 
-🎓 Contexto acadêmico
+🎓 Contexto acadêmico  
 Este projeto foi desenvolvido como parte das atividades práticas do curso de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS). O desenvolvimento teve como objetivo transformar os conceitos apresentados em sala de aula em uma aplicação funcional, permitindo praticar o desenvolvimento de interfaces, organização de projetos React e utilização de bibliotecas modernas.
 
-Orientação
+Orientação  
 * Professor: Geovani Succi [(@geovani-succi)](https://www.github.com/geovani-succi)
 * Curso: Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)
 ⸻
