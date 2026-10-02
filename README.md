@@ -44,5 +44,5 @@ Este projeto foi desenvolvido como parte das atividades práticas do curso de Te
 ## Orientação  
 * Professor: Geovani Succi [(@geovani-succi)](https://www.github.com/geovani-succi)
 * Curso: Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)  
-⸻
+⸻  
 📌 Projeto acadêmico — TADS
