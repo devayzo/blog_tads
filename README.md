@@ -1,4 +1,4 @@
-📝 Blog TADS
+# 📝 Blog TADS
 Projeto de desenvolvimento de uma aplicação web de blog, desenvolvido durante as aulas do curso de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS).
 
 O projeto foi desenvolvido com foco na prática dos conceitos de desenvolvimento Front-End, componentização, gerenciamento de rotas e construção de interfaces utilizando React.
