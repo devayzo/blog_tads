@@ -27,7 +27,7 @@ Entre os conceitos trabalhados estão:
 * Boas práticas de desenvolvimento Front-End.
 
 ## ⚙️ Como executar o projeto  
-Pré-requisitos
+### Pré-requisitos
 * Node.js
 * NPM
 
