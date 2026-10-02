@@ -31,7 +31,7 @@ Entre os conceitos trabalhados estão:
 📂 Estrutura do projeto
 A aplicação possui uma estrutura organizada para separar os principais elementos do projeto.
 
-⚙️ Como executar o projeto
+⚙️ Como executar o projeto  
 Pré-requisitos
 * Node.js
 * NPM
