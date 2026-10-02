@@ -16,14 +16,14 @@ O projeto foi desenvolvido com foco na prática dos conceitos de desenvolvimento
 
 Principais dependências:
 
-{
-  "react": "^19.2.8",
-  "react-dom": "^19.2.8",
-  "react-router-dom": "^7.18.4",
-  "@mui/material": "^9.4.0",
-  "@mui/icons-material": "^9.4.0",
-  "@emotion/react": "^11.14.0",
-  "@emotion/styled": "^11.14.1"
+{  
+  "react": "^19.2.8",  
+  "react-dom": "^19.2.8",  
+  "react-router-dom": "^7.18.4",  
+  "@mui/material": "^9.4.0",  
+  "@mui/icons-material": "^9.4.0",  
+  "@emotion/react": "^11.14.0",  
+  "@emotion/styled": "^11.14.1"  
 }
 
 📚 Objetivo
