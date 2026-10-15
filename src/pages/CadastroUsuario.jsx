@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Container, Box, Paper, Typography, TextField, Button } from '@mui/material';
+import { Alert } from '@mui/material';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import { cadastrarUsuario } from '../data/storage';
 
 function CadastroUsuario() {
   // Cada campo do formulario tem seu proprio estado (formulario controlado).
@@ -8,13 +11,36 @@ function CadastroUsuario() {
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [confirmarSenha, setConfirmarSenha] = useState('')
+  const [erro, setErro] = useState('')
+  const [sucesso, setSucesso] = useState('')
+  const navigate = useNavigate()
 
   function handleCadastro(e) {
     // Sem isso o navegador recarrega a pagina ao enviar o formulario.
     e.preventDefault()
 
-    // Tela apenas visual (mock): nao valida nem salva o cadastro de fato.
-    console.log('Cadastro (mock):', { nome, email, senha, confirmarSenha })
+    if (!nome.trim() || !email.trim() || !senha || !confirmarSenha) {
+      setErro('Preencha todos os campos.')
+      return
+    }
+
+    if (senha !== confirmarSenha) {
+      setErro('As senhas não coincidem.')
+      return
+    }
+
+    const resultado = cadastrarUsuario({ nome: nome.trim(), email: email.trim(), senha })
+    if (resultado.error) {
+      setErro(resultado.error)
+      return
+    }
+
+    setErro('')
+    setSucesso('Usuário cadastrado com sucesso. Você já pode entrar.')
+    setNome('')
+    setEmail('')
+    setSenha('')
+    setConfirmarSenha('')
   }
 
   return (
@@ -74,6 +100,17 @@ function CadastroUsuario() {
               value={confirmarSenha}
               onChange={(e) => setConfirmarSenha(e.target.value)}
             />
+
+            {erro && <Alert severity="error" sx={{ mt: 2 }}>{erro}</Alert>}
+            {sucesso && (
+              <Alert severity="success" sx={{ mt: 2 }} action={
+                <Button color="inherit" size="small" onClick={() => navigate('/login')}>
+                  Entrar
+                </Button>
+              }>
+                {sucesso}
+              </Alert>
+            )}
 
             <Button
               type="submit"

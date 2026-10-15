@@ -10,9 +10,12 @@ import {
   TableCell,
   TableContainer,
 } from '@mui/material';
-import { mockUsuarios } from '../data/mockUsuarios';
+import { useState } from 'react';
+import { getUsuarios } from '../data/storage';
 
 function Usuarios() {
+  const [usuarios] = useState(getUsuarios)
+
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Box sx={{ mb: 4, textAlign: 'center' }}>
@@ -35,7 +38,7 @@ function Usuarios() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {mockUsuarios.map((usuario) => (
+            {usuarios.map((usuario) => (
               <TableRow key={usuario.id}>
                 <TableCell>{usuario.id}</TableCell>
                 <TableCell>{usuario.nome}</TableCell>

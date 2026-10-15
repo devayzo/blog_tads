@@ -4,7 +4,8 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import CadastroUsuario from './pages/CadastroUsuario'
 import Usuarios from './pages/Usuarios'
-import Header from './components/Header';
+import NovoPost from './pages/NovoPost'
+import Header from './components/Header'
 
 function App() {
   // Guarda quem esta logado. null = ninguem entrou ainda.
@@ -30,6 +31,10 @@ function App() {
         <Route
           path="/usuarios"
           element={usuario ? <Usuarios /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/novo-post"
+          element={usuario ? <NovoPost usuario={usuario} /> : <Navigate to="/login" replace />}
         />
       </Routes>
     </BrowserRouter>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Box, Paper, Typography, TextField, Button, Alert } from '@mui/material';
 import BookIcon from '@mui/icons-material/Book';
-import { mockUsuarios } from '../data/mockUsuarios';
+import { getUsuarios } from '../data/storage';
 
 function Login({ onLogin }) {
   // Cada campo do formulario tem seu proprio estado (formulario controlado).
@@ -22,7 +22,7 @@ function Login({ onLogin }) {
     }
 
     // Procura nos dados mockados um usuario com o e-mail E a senha informados.
-    const usuario = mockUsuarios.find((u) => u.email === email && u.senha === senha)
+    const usuario = getUsuarios().find((u) => u.email === email && u.senha === senha)
 
     if (!usuario) {
       setErro('E-mail ou senha inválidos.')

@@ -1,9 +1,12 @@
-import { mockPosts } from '../data/mockPosts';
+import { useState } from 'react';
 import PostCard from '../components/PostCard';
 import { Container, Typography, Box } from '@mui/material';
+import { getPosts } from '../data/storage';
 
 
 function Home() {
+    const [posts] = useState(getPosts)
+
     return (
         <Container maxWidth="md" sx={{ py: 4 }}>
             <Box sx={{ textCenter: 'center', mb: 4, textAlign: 'center' }}>
@@ -15,7 +18,7 @@ function Home() {
                 </Typography>
             </Box>
 
-            {mockPosts.map((post) => (
+            {posts.map((post) => (
                 <PostCard
                     key={post.id}
                     titulo={post.titulo}
