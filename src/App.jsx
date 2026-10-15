@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
+import CadastroUsuario from './pages/CadastroUsuario'
+import Usuarios from './pages/Usuarios'
 import Header from './components/Header';
 
 function App() {
@@ -20,6 +22,14 @@ function App() {
         <Route
           path="/"
           element={usuario ? <Home /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/cadastro-usuario"
+          element={usuario ? <CadastroUsuario /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/usuarios"
+          element={usuario ? <Usuarios /> : <Navigate to="/login" replace />}
         />
       </Routes>
     </BrowserRouter>

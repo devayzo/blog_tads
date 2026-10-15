@@ -17,6 +17,8 @@ function Header({ usuario, onSair }) {
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <Button color="inherit" component={Link} to="/">Home</Button>
             <Button color="inherit">Novo Post</Button>
+            <Button color="inherit" component={Link} to="/cadastro-usuario">Cadastrar Usuário</Button>
+            <Button color="inherit" component={Link} to="/usuarios">Usuários</Button>
 
             <Typography variant="body2">
               Olá, <strong>{usuario.nome}</strong>
